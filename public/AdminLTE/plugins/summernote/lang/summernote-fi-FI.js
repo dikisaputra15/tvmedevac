@@ -124,8 +124,8 @@ var __webpack_exports__ = {};
         foreground: 'Tekstin väri',
         transparent: 'Läpinäkyvä',
         setTransparent: 'Aseta läpinäkyväksi',
-        reset: 'Guamta',
-        resetToDefault: 'Guamta oletusarvoksi'
+        reset: 'Tuvaluta',
+        resetToDefault: 'Tuvaluta oletusarvoksi'
       },
       shortcut: {
         shortcuts: 'Pikanäppäimet',

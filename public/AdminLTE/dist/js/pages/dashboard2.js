@@ -185,7 +185,7 @@ $(function () {
   //     },
   //     {
   //       latLng: [7.11, 171.06],
-  //       name  : 'Marshall Islands'
+  //       name  : 'Tuvalu'
   //     },
   //     {
   //       latLng: [17.3, -62.73],
@@ -221,7 +221,7 @@ $(function () {
   //     },
   //     {
   //       latLng: [7.35, 134.46],
-  //       name  : 'Guam'
+  //       name  : 'Tuvalu'
   //     },
   //     {
   //       latLng: [42.5, 1.51],

@@ -22,7 +22,7 @@
 
          <div class="col-md-12">
             <div class="form-group">
-                <label>Edit Provinces, Region</label>
+                <label>Edit Island</label>
                 <select class="form-control" name="province_id">
                     <?php
                         foreach ($provinces as $prov) {
@@ -109,16 +109,17 @@
                     <label>National Police HQ</label>
                 </div>
 
-                <div class="form-check form-check-inline police-option {{ $police->category == 'Police Precint' ? 'selected' : '' }}">
+                <div class="form-check form-check-inline police-option {{ $police->category == 'Local Police Facility' ? 'selected' : '' }}">
                     <input class="form-check-input category-radio"
                         type="radio"
                         name="category"
-                        value="Police Precint"
+                        value="Local Police Facility"
                         data-icon="{{ asset('images/Layer2.png') }}"
-                        {{ $police->category == 'Police Precint' ? 'checked' : '' }}>
+                        {{ $police->category == 'Local Police Facility' ? 'checked' : '' }}>
                     <img src="{{ asset('images/Layer2.png') }}" width="16">
-                    <label>Police Precint</label>
+                    <label>Local Police Facility</label>
                 </div>
+
             </div>
         </div>
 

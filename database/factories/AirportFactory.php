@@ -20,7 +20,7 @@ class AirportFactory extends Factory
             'province_id' => $this->faker->numberBetween(1, 22),
             'airport_name' => $this->faker->city . ' International Airport',
             'address' => $this->faker->address,
-            'latitude' => 13.4443, // Guam
+            'latitude' => 13.4443, // Tuvalu
             'longitude' => 144.7937,
             'telephone' => $this->faker->phoneNumber,
             'fax' => $this->faker->phoneNumber,
