@@ -9,5 +9,7 @@ class Police extends Model
 {
     use HasFactory;
 
+    public const CATEGORIES = ['National Police HQ', 'Local Police Facility'];
+
     protected $guarded = [];
 }

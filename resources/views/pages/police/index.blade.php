@@ -224,23 +224,6 @@
             margin: 16px auto;
         }
 
-        #policeAreaLayerModal .image-modal-dialog {
-            max-width: 1660px;
-        }
-
-        #policeAreaLayerModal .police-area-layer-body {
-            padding: 0;
-            overflow: hidden;
-        }
-
-        #policeAreaLayerModal .police-area-layer-frame {
-            display: block;
-            width: 100%;
-            height: calc(100vh - 110px);
-            height: calc(100dvh - 110px);
-            border: 0;
-        }
-
         .image-modal-dialog .modal-content {
             max-height: calc(100vh - 32px);
             overflow: hidden;
@@ -363,12 +346,12 @@
 
                 <button class="btn p-1" data-bs-toggle="modal" data-bs-target="#police4Modal">
                     <img src="{{ asset('images/Layer1.png') }}" style="width:15px; height:15px;">
-                    <small>National Police HQ</small>
+                    <small>National Police (HQ)</small>
                 </button>
 
                 <button class="btn p-1" data-bs-toggle="modal" data-bs-target="#police3Modal">
                     <img src="{{ asset('images/Layer2.png') }}" style="width:15px; height:15px;">
-                    <small>Police Precint</small>
+                    <small>Local Police Facility</small>
                 </button>
 
                 <button type="button" class="btn btn-danger d-flex flex-column align-items-center p-3 {{ request()->is('hospital') ? 'active' : '' }}"
@@ -390,150 +373,10 @@
 </div>
 
 
-<div class="modal fade" id="police1Modal" tabindex="-1" aria-labelledby="police1ModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:800px;">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="d-flex align-items-center gap-2">
-          <img src="{{ asset('images/Layer4.png') }}" alt="District Police Command" style="width:24px; height:24px; object-fit:contain;">
-          <h5 class="modal-title" id="police1ModalLabel">District Police Command / Police Station</h5>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-      <div class="modal-body">
-        <p><strong>Command Level:</strong> Third-tier Territorial Police Command</p>
-        <p><strong>Typical Head Rank:</strong> Superintendent of Police (SP) or Inspector of Police (IP)</p>
-        <p><strong>Administrative Equivalent:</strong> District level</p>
-
-        <p>Supervises police operations within a district by directing police stations and subordinate units, coordinating patrol activities, maintaining public order, supporting criminal investigations, and ensuring effective delivery of policing services within their jurisdiction.</p>
-
-        <p class="mb-2"><strong>Responsibilities:</strong></p>
-        <ul>
-          <li>Command district-level police operations.</li>
-          <li>Supervise Police Station Commanders within the district.</li>
-          <li>Coordinate patrol, crime prevention, and law enforcement activities.</li>
-          <li>Direct responses to local emergencies and major incidents.</li>
-          <li>Allocate operational personnel and resources among police stations.</li>
-          <li>Monitor crime trends and operational performance within the district.</li>
-          <li>Coordinate policing with district administrations and community leaders.</li>
-          <li>Ensure implementation of provincial operational directives.</li>
-          <li>Prepare operational reports for the Provincial Police Commander (PPCs).</li>
-          <li>Support community policing and conflict-resolution initiatives.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="police2Modal" tabindex="-1" aria-labelledby="police2ModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:800px;">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="d-flex align-items-center gap-2">
-          <img src="{{ asset('images/Layer3.png') }}" alt="Provincial Police Command" style="width:24px; height:24px; object-fit:contain;">
-          <h5 class="modal-title" id="police2ModalLabel">Provincial Police Command (PPC)</h5>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-      <div class="modal-body">
-        <p><strong>Command Level:</strong> Second-tier Territorial Police Command</p>
-        <p><strong>Typical Head Rank:</strong> Chief Superintendent of Police (CSP) or Superintendent of Police (SP)</p>
-        <p><strong>Administrative Equivalent:</strong> Provincial (or Metropolitan Command in the National Capital District and Lae) level</p>
-
-        <p>Commands all policing activities within a province or metropolitan area by directing district police commands, managing crime prevention and law enforcement operations, coordinating emergency responses, and implementing national policing policies at the provincial level.</p>
-
-        <p class="mb-2"><strong>Responsibilities:</strong></p>
-        <ul>
-          <li>Command all policing operations within a province.</li>
-          <li>Supervise District Police Commanders and Station Commanders.</li>
-          <li>Coordinate crime prevention, patrol, and public order operations.</li>
-          <li>Direct provincial criminal investigations and emergency responses.</li>
-          <li>Manage police personnel, logistics, and operational resources within the province.</li>
-          <li>Coordinate policing activities with provincial administrations and local authorities.</li>
-          <li>Monitor crime patterns and public safety issues.</li>
-          <li>Ensure compliance with national policing standards and operational procedures.</li>
-          <li>Prepare operational reports for the Divisional Police Commander.</li>
-          <li>Promote community policing and public engagement initiatives.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="police3Modal" tabindex="-1" aria-labelledby="police3ModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:800px;">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="d-flex align-items-center gap-2">
-          <img src="{{ asset('images/Layer2.png') }}" alt="Divisional Command" style="width:24px; height:24px; object-fit:contain;">
-          <h5 class="modal-title" id="police3ModalLabel">Police Precinct</h5>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-      <div class="modal-body">
-        <p><strong>Command level:</strong> Lowest-level territorial command</p>
-        <p><strong>Typical Head Rank:</strong> Police Lieutenant</p>
-        <p><strong>Administrative Equivalent:</strong> Police Precinct/local police command</p>
-        <p><strong>Role:</strong> Precinct Commands are the local territorial policing unit responsible for delivering frontline police services within designated geographic jurisdictions.</p>
-        <p><strong>Function:</strong> Precinct Commands manage patrol officers and shifts, coordinate first-response policing, and maintain day-to-day public safety and police presence within the Precinct area.</p>
-        <p class="mb-2"><strong>Responsibilities:</strong></p>
-        <ul>
-          <li>Direct daily patrol operations within the Precinct jurisdiction.</li>
-          <li>Supervise patrol officers, shifts, and other assigned frontline personnel.</li>
-          <li>Allocate personnel and patrol resources according to local operational requirements.</li>
-          <li>Manage responses to emergency and non-emergency calls for service.</li>
-          <li>Monitor crime, disorder, traffic, and public-safety conditions within the Precinct.</li>
-          <li>Coordinate preliminary responses to incidents requiring specialized GPD services.</li>
-          <li>Maintain liaison with residents, businesses, community organizations, and local authorities.</li>
-          <li>Review incident, arrest, and other operational reports submitted by patrol personnel.</li>
-          <li>Implement GPD policies and operational directives at the Precinct level.</li>
-          <li>Report Precinct activities, incidents, personnel matters, and operational requirements through the Neighborhood Patrol District command.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="police4Modal" tabindex="-1" aria-labelledby="police4ModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:800px;">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="d-flex align-items-center gap-2">
-          <img src="{{ asset('images/Layer1.png') }}" alt="National Police HQ" style="width:24px; height:24px; object-fit:contain;">
-          <h5 class="modal-title" id="police4ModalLabel">National Police HQ</h5>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-      <div class="modal-body">
-        <p><strong>Command level:</strong> Highest-level territorial command</p>
-        <p><strong>Typical Head Rank:</strong> Police Major</p>
-        <p><strong>Administrative Equivalent:</strong> Territorial policing bureau</p>
-        <p><strong>Role:</strong> The Patrol Operations Bureau is the principal departmental command responsible for organizing and overseeing GPD’s geographically based patrol operations throughout Tuvalu.</p>
-        <p>The Patrol Operations Bureau directs territorial patrol services, coordinates the neighborhood patrol districts and precinct commands, and ensures consistent delivery of frontline police services across the island.</p>
-        <p class="mb-2"><strong>Responsibilities:</strong></p>
-        <ul>
-          <li>Direct territorial patrol operations throughout Tuvalu.</li>
-          <li>Supervise the activities of the neighborhood patrol districts and precinct commands.</li>
-          <li>Establish patrol priorities and operational requirements for territorial policing.</li>
-          <li>Coordinate deployment of patrol personnel and resources according to operational needs.</li>
-          <li>Monitor emergency response and frontline police service delivery.</li>
-          <li>Manage major incidents requiring resources from multiple Precincts or districts.</li>
-          <li>Ensure implementation of department-wide policing policies at the territorial level.</li>
-          <li>Review operational reports, crime patterns, and patrol performance from subordinate commands.</li>
-          <li>Oversee territorial operations with specialized GPD bureaus and divisions.</li>
-          <li>Report territorial policing activities and operational requirements to the Police Commander.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+@include('components.police-classification-modals')
 
 <div class="modal fade" id="policeAreaLayerModal" tabindex="-1" aria-labelledby="policeAreaLayerLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered image-modal-dialog">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable image-modal-dialog">
     <div class="modal-content">
       <div class="modal-header py-2">
         <div class="d-flex align-items-center gap-2">
@@ -542,13 +385,13 @@
         </div>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body police-area-layer-body">
-        <iframe
-            class="police-area-layer-frame"
-            src="{{ asset('police-area-layer.html') }}"
-            title="Police Territorial Areas and Administrative Equivalents"
-            loading="lazy"
-        ></iframe>
+      <div class="modal-body p-4">
+        <ol class="mb-0 ps-4">
+          <li class="mb-3"><strong>Strategic Command:</strong> Strategic Command sits at the apex of the national security hierarchy, establishing overall force policy, statutory compliance, and executive direction. Anchored politically by the Minister of Justice, Communication, and Foreign Affairs and operationally led by the Commissioner, this level formulates national policing strategy, oversees international security partnerships, and manages executive resource allocation. It provides the overarching legal and institutional framework within which the entire police service operates, ensuring alignment with constitutional mandates and Cabinet directives.</li>
+          <li class="mb-3"><strong>Headquarters Command:</strong> Headquarters Command functions as the administrative engine and operational control hub located at the central police headquarters in Funafuti. Managed primarily by the Deputy Commissioner, the Headquarters Command coordinates cross-divisional tasks, oversees central support functions—such as finance, logistics, human resources, and communications—and maintains national command readiness. It acts as the primary link between strategic policy decisions made by executive command and the practical execution of law enforcement duties by operational branches.</li>
+          <li class="mb-3"><strong>Functional Command:</strong> Functional Command encompasses the specialized operational divisions tasked with executing specific law enforcement mandates across Tuvalu. Led by Inspectors or designated branch commanders, these specialized units—including the Criminal Investigation Division (CID), Maritime Surveillance Unit (MSU), Fire and Rescue Unit (FRU), and Correctional Services—apply distinct technical methodologies to safeguard national maritime borders, conduct major criminal investigations, manage custodial facilities, and deliver emergency services.</li>
+          <li><strong>Territorial Command:</strong> Territorial Command delivers decentralized, front-line policing services across the capital atoll and outer island communities. Operating through the General Duties &amp; Community Policing division, it manages Funafuti Central Station and small police outposts across seven (7) outer islands. Territorial Command maintains everyday public order, enforces traffic laws, and responds to local calls for service while integrating closely with traditional <em>Falekaupule</em> assemblies to maintain social harmony and public trust within close-knit island societies.</li>
+        </ol>
       </div>
     </div>
   </div>
@@ -565,14 +408,14 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body p-4" style="overflow-y: auto;">
-        <p>The GPD’s command flow follows a hierarchical structure from the Governor of Tuvalu as the civilian executive authority, through the Chief of Police and the Police Commander, to the Department’s operational and specialized bureaus. Under the Police Commander, the Patrol Operations Bureau directs the neighborhood patrol districts and their respective precinct commands, which in turn supervise frontline patrol officers and shifts. Specialized functions, including investigations, forensic services, highway patrol, and special operations, operate through their respective bureau and division chains while remaining integrated into the overall command structure. This arrangement enables strategic direction from the executive and headquarters levels to be translated into operational orders, specialized activities, and geographically focused frontline policing throughout Tuvalu.</p>
+        <p>The operational and administrative command flow of the Tuvalu Police Service (TPS) follows a centralized, vertical chain of command anchored in statutory law. Executive government oversight is exercised by the Minister of Justice, Communication, and Foreign Affairs, who maintains overall political responsibility for national security and police policy. Direct operational control, superintendence, and administration of the force are vested in the Commissioner of Police, who issues binding orders and standing instructions across all units. Command flows downward from the Commissioner through the Deputy Commissioner to division heads—such as the inspectors overseeing General Duties, CID, the Maritime Surveillance Unit, Prisons, and Corporate Services—down to local station officers-in-charge. In the outer islands, station commanders manage routine village policing under the central direction of Funafuti headquarters while actively liaising with traditional <em>Falekaupule</em> assemblies to align formal law enforcement with local customary governance.</p>
 
         <h6 class="fw-bold mt-4 mb-3">Reporting Relationships &mdash; Information Flows</h6>
         <ol class="mb-0 ps-4">
-          <li class="mb-3"><strong>Divisional Reporting:</strong> Precinct commands and patrol shifts report operational activities, incidents, and local policing matters through their respective neighborhood patrol districts and Patrol Operations Bureau chains to the Police Commander.</li>
-          <li class="mb-3"><strong>Specialized Case Reporting:</strong> Cases requiring specialized investigation, forensic examination, highway enforcement, or special operations are referred through the appropriate specialized division or bureau, with case information and operational results reported through their respective command chains.</li>
-          <li class="mb-3"><strong>Headquarters Reporting:</strong> Bureaus and divisions submit operational, personnel, administrative, and performance information through the Police Commander and Chief of Police to maintain department-wide coordination and oversight.</li>
-          <li><strong>Strategic and Administrative Reporting:</strong> The Chief of Police provides overall departmental reporting and administrative accountability to the Governor of Tuvalu, while strategic direction, policy, resources, and major administrative matters flow from the executive level through the GPD command structure.</li>
+          <li class="mb-3"><strong>Divisional Reporting:</strong> Divisional reporting channels facilitate the routine flow of daily operational information from front-line units to branch leadership. Local station commanders, shift supervisors, and outer island officers-in-charge compile daily incident logs, shift summaries, and patrol reports. These reports are submitted upward through the chain of command to the respective Inspector heading each major division, such as General Duties or Maritime Surveillance. This structured flow ensures that division heads maintain continuous visibility over local crime trends, ongoing traffic enforcement activities, resource consumption, and immediate public safety incidents within their functional domains.</li>
+          <li class="mb-3"><strong>Specialized Case Reporting:</strong> Specialized case reporting pathways handle sensitive, high-risk, or legally complex investigative matters that require direct oversight. Investigators within specialized branches, including the Criminal Investigation Division (CID) and the Domestic Violence Unit (DVU), prepare formal case summaries, statutory protection order logs, and evidence dossiers. These reports bypass standard routine channels to flow directly to the CID Commander and, when necessary, to the Deputy Commissioner or Commissioner. This streamlined information exchange ensures strict evidence management, protects victim confidentiality, and accelerates legal referrals to the Attorney-General’s office for court prosecution.</li>
+          <li class="mb-3"><strong>Headquarters Reporting:</strong> Headquarters reporting aggregates operational intelligence, crime statistics, and unit readiness data from all divisions into consolidated national command briefings. The Deputy Commissioner synthesizes incoming logs from General Duties, the Maritime Surveillance Unit, Prisons, and outer island posts to monitor daily force readiness and evaluate critical incidents. These consolidated intelligence reports are presented regularly to the Commissioner, enabling executive leadership to assess national security conditions, adjust patrol deployments, and coordinate emergency responses across the archipelago.</li>
+          <li><strong>Strategic and Administrative Reporting:</strong> Strategic and administrative reporting connects the executive command of the police service with higher government authorities and external oversight bodies. The Commissioner submits formal policy recommendations, annual performance evaluations, national security assessments, and budget requests to the Minister of Justice, Communication, and Foreign Affairs. Simultaneously, administrative reporting regarding senior appointments, officer promotions, and formal disciplinary appeals flows to the Public Service Commission (PSC). This high-level information flow maintains constitutional accountability, secures legislative funding, and aligns police strategy with national justice goals.</li>
         </ol>
       </div>
     </div>
@@ -1336,15 +1179,7 @@ combinedPanelDiv.innerHTML = `
                 @endforeach
             </select>
             <label>Category:</label>
-            ${[
-                'National Police HQ',
-                'Police Precint',
-            ].map(c => `
-            <label style="display:block;font-size:13px;margin-bottom:5px;">
-                <input type="checkbox" name="policeCategory" value="${c}">
-                ${c} (<span id="count-${c.replace(/[^a-zA-Z0-9]/g,'-')}">0</span>)
-            </label>
-            `).join('')}
+            @include('components.police-category-filter')
             <hr>
             <div class="filter-box" id="provinceSelect">
                 <label class="filter-label">Province</label>
